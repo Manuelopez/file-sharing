@@ -1,0 +1,30 @@
+{
+  "collection": "@nestjs/schematics",
+  "sourceRoot": "apps/file-sharing/src",
+  "monorepo": true,
+  "root": "apps/file-sharing",
+  "compilerOptions": {
+    "webpack": true,
+    "tsConfigPath": "apps/file-sharing/tsconfig.app.json"
+  },
+  "projects": {
+    "file-sharing": {
+      "type": "application",
+      "root": "apps/file-sharing",
+      "entryFile": "main",
+      "sourceRoot": "apps/file-sharing/src",
+      "compilerOptions": {
+        "tsConfigPath": "apps/file-sharing/tsconfig.app.json"
+      }
+    },
+    "client": {
+      "type": "application",
+      "root": "apps/client",
+      "entryFile": "main",
+      "sourceRoot": "apps/client/src",
+      "compilerOptions": {
+        "tsConfigPath": "apps/client/tsconfig.app.json"
+      }
+    }
+  }
+}
