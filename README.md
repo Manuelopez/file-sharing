@@ -14,9 +14,10 @@ $ yarn
 # development
 $ yarn start:share:dev
 
-$ npm run start:client:
+$ yarn start:client:dev
 
 # production mode
 $ yarn start:share:prod
+
 $ yarn start:client:prod
 ```
